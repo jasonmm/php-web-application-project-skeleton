@@ -1,0 +1,12 @@
+### Composer template
+composer.phar
+vendor/
+
+### JetBrains template
+## Directory-based project format:
+.idea/
+
+## File-based project format:
+*.ipr
+*.iws
+

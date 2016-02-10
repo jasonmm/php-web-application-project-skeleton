@@ -1,0 +1,23 @@
+{
+  "name": "jasonmm/php-web-application-project-skeleton",
+  "description": "Skeleton for new PHP web application projects",
+  "minimum-stability": "stable",
+  "license": "mit",
+  "authors": [
+    {
+      "name": "jasonmm"
+    }
+  ],
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist"
+  },
+  "autoload": {
+    "psr-4": {
+    }
+  },
+  "require": {
+    "php": "7.*",
+    "league/route": "1.2.*"
+  }
+}
