@@ -33,18 +33,18 @@ class Router {
     /**
      * Create routes conforming to our calling convention.
      *
-     * @param string $method
+     * @param string $httpMethod
      * @param string $route
      * @param ControllerBase $handler
      * @param AbstractStrategy $strategy
      */
     private function addRoute(
-        string $method,
+        string $httpMethod,
         string $route,
         ControllerBase $handler,
         AbstractStrategy $strategy = null
     ) {
-        $handlerStr = get_class($handler) . '::' . ucfirst($method);
-        $this->router->addRoute($method, $route, $handlerStr, $strategy);
+        $handlerStr = get_class($handler) . '::' . ucfirst($httpMethod);
+        $this->router->addRoute($httpMethod, $route, $handlerStr, $strategy);
     }
 }
